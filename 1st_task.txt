@@ -1,0 +1,3 @@
+Select * FROM Books;
+SELECT * FROM Books ORDER BY Title;
+SELECT authorId, COUNT(*) FROM Books WHERE authorId IS NOT NULL GROUP BY authorId;

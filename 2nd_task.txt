@@ -1,0 +1,6 @@
+1. INSERT INTO authors SET name='Jo Nesbø';
+   INSERT INTO authors SET name='Stephen King';
+2. INSERT INTO books SET authorId=8, title='The Thirst', year='2017';
+   INSERT INTO books SET authorId=8, title='The Snowman', year='2007';
+   INSERT INTO books SET authorId=9, title='Finders Keepers', year='2018';
+3. UPDATE books SET authorId=9 WHERE bookId=10;

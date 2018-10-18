@@ -1,0 +1,6 @@
+1. CREATE TABLE New_table(authorId INT(11) NOT NULL AUTO_INCREMENT, bookId INT(11) NOT NULL, primary key (authorId));
+2. UPDATE books SET authorId='3' WHERE bookId='6';
+   UPDATE books SET authorId='3' WHERE bookId='7';
+   UPDATE books SET authorId='3' WHERE bookId='8';
+3. SELECT books.title, GROUP_CONCAT(authors.name SEPARATOR ', ') as authors FROM books INNER JOIN new_table ON books.bookId=new_table.bookId INNER JOIN authors ON authors.authorId=new_table.authorId GROUP BY new_table.bookId;
+4. ALTER TABLE new_table CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
